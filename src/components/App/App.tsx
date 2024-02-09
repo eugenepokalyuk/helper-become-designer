@@ -92,7 +92,7 @@ const App = () => {
     <>
       <Gradient />
       <Header isScrolled={isScrolled ? true : false} />
-      <div className="max-w-[1024px] mx-auto px-4 pb-[100px] pt-[50px]">
+      <div className="max-w-[1024px] mx-auto px-4 pb-[50px] pt-[50px]">
         <main>
           <ProductDesignerAd />
           <WhyChooseDesigning cards={cards} title={'Почему продуктовый Дизайнер — работа мечты?'} />
@@ -103,9 +103,9 @@ const App = () => {
           <HostIntroduction />
           <WhyChooseDesigning cards={cards2} title={'После эфира отправим набор полезностей'} />
           <EventAd />
+          <Footer />
         </main>
       </div>
-      <Footer />
     </>
   )
 }
