@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "ALS Hauss Variable";
+    font-weight: 400;
+    src: url("./assets/fonts/als-hauss/als_hauss_regular.otf");
+    color: #800080;
+}
+
+@font-face {
+    font-family: "ALS Hauss Variable";
+    font-weight: 500;
+    src: url("./assets/fonts/als-hauss/als_hauss_medium.otf");
+}
+
+@font-face {
+    font-family: "ALS Hauss Variable";
+    font-weight: 700;
+    src: url("./assets/fonts/als-hauss/als_hauss_bold.otf");
+}
+
+@font-face {
+    font-family: "ALS Hauss Variable";
+    font-weight: 900;
+    src: url("./assets/fonts/als-hauss/als_hauss_black.otf");
+}
+
+* {
+    font-family: "ALS Hauss Variable";
+    hyphens: auto;
+}
+
+html {
+    background: linear-gradient(#f5f2f0, 90%, #fff);
+}
+
+img {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.logo-dark path {
+    transition: 300ms;
+    fill: #000;
+}
+
+.logo-light path {
+    transition: 300ms;
+    fill: #fff;
+}
+
+.header-scrolled {
+    transition: 300ms;
+    background: #ffffffaa;
+    backdrop-filter: blur(10px);
+}
+
+.header-not-scrolled {
+    transition: 300ms;
+}
