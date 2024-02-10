@@ -20,7 +20,7 @@ const makeNumbersBold = (text: string) => {
 const ServiceInterfaceShowcaseCard: FC<ServiceInterfaceShowcaseCardProps> = ({ logo, description }) => {
     const updatedDescription = makeNumbersBold(description);
     return (
-        <div className="flex flex-col items-center justify-center text-center m-4 md:w-full">
+        <div className="flex flex-col items-center justify-start text-center md:m-4 my-4 md:w-full text-center">
             <img src={logo} alt="Service Logo" className="w-[60px] md:w-[90px] h-[60px] md:h-[90px] mb-3 md:mb-2 rounded-[16px] md:rounded-[22.33px]" />
             <p className="font-[400] text-[16px] leading-[17.6px] max-w-[165px]" dangerouslySetInnerHTML={{ __html: updatedDescription }}></p>
         </div>

@@ -8,8 +8,9 @@ const EventAd: React.FC = () => {
         <div className="relative bg-[#ede7df] rounded-[30px] mt-[16rem] md:mt-[12rem] md:mt-24 p-4">
 
             <div className='relative w-full z-10 h-[5rem] md:h-[18rem]'>
-                <img src={calendarImage} alt="Calendar" className="max-md:hidden absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-[8rem] w-full h-auto object-contain" />
-                <img src={calendarMobileImage} alt="Calendar" className="md:hidden absolute top-[6rem] left-1/2 transform -translate-x-1/2 -translate-y-full w-full max-w-lg h-auto object-contain" />
+                {/* <img src={pointer} alt="" className='md:hidden absolute -top-11 left-[7rem] z-30' /> */}
+                <img src={calendarImage} alt="Calendar" className="max-md:hidden absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-[8rem] w-full h-auto object-contain z-10" />
+                <img src={calendarMobileImage} alt="Calendar" className="md:hidden absolute top-[6rem] left-1/2 transform -translate-x-1/2 -translate-y-full w-[290px] max-w-lg h-auto object-contain z-10" />
             </div>
 
             <div className='relative flex flex-col w-full z-20 text-center'>
