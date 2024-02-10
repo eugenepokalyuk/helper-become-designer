@@ -8,10 +8,10 @@ const Footer: React.FC = () => {
                     <h1>Helper</h1>
                 </div>
                 <div className="flex flex-col md:flex-row text-center mt-5 font-[400] text-[14px] leading-[15.54px] text-[#D3D3D3] md:space-x-6 space-y-4 md:space-y-0">
-                    <span>Согласие на рассылку</span>
-                    <span>Пользовательское соглашение</span>
-                    <span>Согласие на использование cookies</span>
-                    <span>Положение о конфиденциальности</span>
+                    <span className='cursor-pointer hover:brightness-105'>Согласие на рассылку</span>
+                    <span className='cursor-pointer hover:brightness-105'>Пользовательское соглашение</span>
+                    <span className='cursor-pointer hover:brightness-105'>Согласие на использование cookies</span>
+                    <span className='cursor-pointer hover:brightness-105'>Положение о конфиденциальности</span>
                 </div>
             </div>
         </footer>
