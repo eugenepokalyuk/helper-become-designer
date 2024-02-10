@@ -63,3 +63,11 @@ img {
 .header-not-scrolled {
     transition: 300ms;
 }
+
+.grad {
+    border-image: linear-gradient(45deg, #3D8BFF, #AB23FF) 1;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}

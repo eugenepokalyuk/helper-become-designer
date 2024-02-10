@@ -95,7 +95,7 @@ const App = () => {
       <div className="max-w-[1024px] mx-auto px-4 pb-[50px] pt-[50px]">
         <main>
           <ProductDesignerAd />
-          <WhyChooseDesigning cards={cards} title={'Почему продуктовый Дизайнер — работа мечты?'} />
+          <WhyChooseDesigning cards={cards} title={'Почему продуктовый дизайнер — работа мечты?'} />
           <ServiceInterfaceShowcaseCard services={services} />
           <RealtimeDesignBanner />
           <UIWorkshopBanner />
