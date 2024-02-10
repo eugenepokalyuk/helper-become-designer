@@ -40,7 +40,7 @@ const cards: any = [
     description: 'Продуктовый дизайнер - креативная IT профессия которая доступна каждому',
     size: 128
   }
-]
+];
 const cards2: any = [
   {
     image: figma,
@@ -58,7 +58,7 @@ const cards2: any = [
     description: 'Марина расскажет по шагам как войти в профессию',
     size: 105
   }
-]
+];
 const services = [{
   logo: CompanyMegaImage,
   description: `Больше 30 млн посетителей в мес`
@@ -71,7 +71,7 @@ const services = [{
 }, {
   logo: CompanyYandexMarketImage,
   description: "~15 млн активных покупателей"
-}]
+}];
 const App = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 

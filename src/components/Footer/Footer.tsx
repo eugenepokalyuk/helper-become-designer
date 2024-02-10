@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
                 <div className="font-[500] text-[52px] leading-[43.31px] -tracking-[4.15px] text-[#929292]/40">
                     <h1>Helper</h1>
                 </div>
-                <div className="flex flex-col md:flex-row text-center mt-5 font-[400] text-[14px] leading-[15.54px] text-[#D3D3D3] space-x-6">
+                <div className="flex flex-col md:flex-row text-center mt-5 font-[400] text-[14px] leading-[15.54px] text-[#D3D3D3] md:space-x-6 space-y-4 md:space-y-0">
                     <span>Согласие на рассылку</span>
                     <span>Пользовательское соглашение</span>
                     <span>Согласие на использование cookies</span>
