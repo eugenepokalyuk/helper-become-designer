@@ -79,7 +79,7 @@ img {
 
 @keyframes popUp {
     from {
-        transform: translateY(300px);
+        transform: translateY(500px);
         opacity: 0;
     }
 
