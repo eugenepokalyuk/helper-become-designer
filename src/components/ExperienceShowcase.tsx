@@ -10,10 +10,10 @@ import React from 'react';
 // import { ReactComponent as YandexIcon } from '../assets/icons/yandex-icon.svg';
 
 import ChijikIcon from '../assets/icons/chizik-icon.png';
-import DocmedIcon from '../assets/icons/doc-icon.png';
 import SberIcon from '../assets/icons/sber-icon.png';
 import YandexIcon from '../assets/icons/yandex-icon.png';
 import FiveIcon from '../assets/images/companies/5chka.png';
+import DocmedIcon from '../assets/images/companies/docmed.png';
 import KFCIcon from '../assets/images/companies/kfc.png';
 import LentaIcon from '../assets/images/companies/lenta.png';
 import TechnoIcon from '../assets/images/companies/tn.png';
