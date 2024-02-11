@@ -81,7 +81,7 @@ const ExperienceShowcase: React.FC = () => {
             </div>
 
             <div className="md:hidden rounded-[30px] overflow-hidden mt-8 w-full h-[580px]">
-                <video src={video} className="w-auto h-full rounded-[30px]" autoPlay muted loop style={{
+                <video src={video} className="w-auto h-full rounded-[30px]" autoPlay muted loop playsInline style={{
                     objectFit: 'cover',
                     transform: 'scale(1.5)'
                 }} />
