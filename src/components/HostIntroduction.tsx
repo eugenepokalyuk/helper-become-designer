@@ -3,7 +3,7 @@ import hostImage from '../assets/images/max.png';
 
 const HostIntroduction: React.FC = () => {
     return (
-        <div className="my-10 md:my-20 mt-20">
+        <div className="my-10 md:my-20 mt-20 md:my-[80px]">
             <div className="md:grid md:grid-cols-2 md:items-center">
                 <div>
                     <h1 className="font-[700] text-[28px] md:text-[38px] leading-[29.4px] md:leading-[34.2px] -tracking-[0.04em] text-black md:text-nowrap">

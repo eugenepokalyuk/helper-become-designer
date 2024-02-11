@@ -6,11 +6,11 @@ import LavkaImage from '../assets/images/lavka/lavka_screen.png';
 
 const UIWorkshopBanner: React.FC = () => {
     const [scrollY, setScrollY] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             setScrollY(window.scrollY);
-            console.log(window.scrollY)
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -30,16 +30,28 @@ const UIWorkshopBanner: React.FC = () => {
                     <p className='font-[400] text-[16px] md:text-[24px] leading-[16px] md:leading-[24px] -tracking-[0.3px] md:-tracking-[0.5px] opacity-[32%] max-w-[400px] mb-[32px] md:mb-[70px]'>Вместе в прямом эфире с нуля соберём приложение «Лавки»</p>
 
                     <div className="max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto relative">
-                        <img src={LavkaImage} alt="Yandex Lavka menu" className="w-full h-auto" />
+                        <img
+                            src={LavkaImage}
+                            alt="Yandex Lavka menu"
+                            className="w-full h-auto"
+                            onMouseEnter={() => setIsHovered(true)}
+                            onMouseLeave={() => setIsHovered(false)}
+                        />
                         <img
                             src={CursorYou}
                             alt="Cursor You"
-                            className={`absolute w-[85px] md:w-[200px] h-auto top-[7rem] md:top-[13rem] -left-[0.5rem] md:-left-[4rem] cursor-you ${cursorClass}`}
+                            // className={`absolute w-[85px] md:w-[200px] h-auto top-[7rem] md:top-[13rem] -left-[0.5rem] md:-left-[4rem] cursor-you ${cursorClass}`}
+                            // className={`absolute w-[85px] md:w-[200px] h-auto top-[7rem] md:top-[13rem] -left-[0.5rem] md:-left-[4rem] cursor-you ${window.innerWidth > 425 && isHovered ? 'animate-cursor' : ''} ${cursorClass}`}
+                            // className={`absolute w-[85px] md:w-[200px] h-auto top-[7rem] md:top-[13rem] -left-[0.5rem] md:-left-[4rem] cursor-you ${cursorClass} ${isHovered ? 'animate-cursor-around' : ''}`}
+                            className={`absolute w-[85px] md:w-[200px] h-auto top-[7rem] md:top-[13rem] -left-[0.5rem] md:-left-[4rem] cursor-you ${cursorClass} ${window.innerWidth > 425 && isHovered ? 'animate-cursor-smooth-you' : ''}`}
                         />
                         <img
                             src={CursorWe}
                             alt="Cursor We"
-                            className={`absolute w-[60px] md:w-[150px] h-auto top-[7rem] md:top-[14rem] -right-[1.5rem] md:-right-[6rem] cursor-we ${cursorClass} `}
+                            // className={`absolute w-[60px] md:w-[150px] h-auto top-[7rem] md:top-[14rem] -right-[1.5rem] md:-right-[6rem] cursor-we ${cursorClass} `}
+                            // className={`absolute w-[60px] md:w-[150px] h-auto top-[7rem] md:top-[14rem] -right-[1.5rem] md:-right-[6rem] cursor-we ${window.innerWidth > 425 && isHovered ? 'animate-cursor' : ''} ${cursorClass}`}
+                            // className={`absolute w-[60px] md:w-[150px] h-auto top-[7rem] md:top-[14rem] -right-[1.5rem] md:-right-[6rem] cursor-we ${cursorClass} ${isHovered ? 'animate-cursor-around' : ''}`}
+                            className={`absolute w-[60px] md:w-[150px] h-auto top-[7rem] md:top-[14rem] -right-[1.5rem] md:-right-[6rem] cursor-we ${cursorClass} ${window.innerWidth > 425 && isHovered ? 'animate-cursor-smooth-we' : ''}`}
                         />
                     </div>
 
@@ -47,7 +59,7 @@ const UIWorkshopBanner: React.FC = () => {
 
                     <div className='mt-8 md:mt-12'>
                         <p className="md:hidden font-[700] text-[28px] leading-[29.4px] -tracking-[0.04em]">И мы не только <span className='text-nowrap md:text-wrap'>порисуем,</span> <span className='text-nowrap md:text-wrap'>мы углубимся в самые</span> дебри, чтобы они вас тоже не пугали :)</p>
-                        <p className="max-md:hidden font-[700] text-[38px] leading-[38px] -tracking-[0.04em]">И мы не только порисуем, <span className='text-nowrap'>мы углубимся</span> в самые дебри продуктового, чтобы они вас <span className='text-nowrap'>не пугали :)</span></p>
+                        <p className="max-md:hidden font-[700] text-[38px] leading-[38px] -tracking-[0.04em] max-w-[600px]">И мы не только порисуем, <span className='text-nowrap'>мы углубимся</span> в самые дебри продуктового, чтобы они вас <span className='text-nowrap'>не пугали :)</span></p>
                     </div>
                 </div>
 

@@ -3,13 +3,6 @@ import figma from '../assets/icons/figma-icon.png';
 import marina from '../assets/icons/marina-icon.png';
 import notion from '../assets/icons/notion-icon.png';
 
-// type SendHelperSetCardProps = {
-//     image: any;
-//     title: string;
-//     description: string;
-//     size: number
-// }
-
 const SendHelperSet: FC = () => {
     return (
         <div className="mt-[80px]">
@@ -18,17 +11,17 @@ const SendHelperSet: FC = () => {
 
                 <div className="flex flex-row md:flex-col items-start mt-10 md:mt-4 gap-x-3">
                     <div className={`max-w-[60px] md:max-w-[100px] md:w-full`}>
-                        <img src={figma} alt={'Пришлём все исходники после эфира'} className={`md:w-auto md:h-auto object-contain`} />
+                        <img src={figma} alt={'Фигма логотип'} className={`md:w-auto md:h-auto object-contain`} />
                     </div>
                     <div className="w-full md:mt-[32px]">
-                        <p className={`font-[700] text-[24px] md:text-[32px] leading-[25.2px] md:leading-[32px] -tracking-[.04em] max-w-[250px] md:max-w-[300px] text-black`}>Пришлём все исходники после эфира</p>
+                        <p className={`font-[700] text-[24px] md:text-[32px] leading-[25.2px] md:leading-[32px] -tracking-[.04em] max-w-[250px] md:max-w-[300px] text-black`}>Пришлём все исходники <span className="text-nowrap">после эфира</span></p>
                         <p className="font-[400] text-[16px] leading-[17.6px] text-[#A6A6A6] mt-[12px] md:max-w-[250px]">Бесплатно отдадим всё, что отрисовали во время эфира</p>
                     </div>
                 </div>
 
                 <div className="flex flex-row md:flex-col items-start mt-10 md:mt-4 gap-x-3">
                     <div className={`max-w-[60px] md:max-w-[100px] md:w-full`}>
-                        <img src={notion} alt={'Пришлём все исходники после эфира'} className={`md:w-auto md:h-auto object-contain`} />
+                        <img src={notion} alt={'Ноушн логотип'} className={`md:w-auto md:h-auto object-contain`} />
                     </div>
                     <div className="w-full md:mt-[32px]">
                         <p className={`font-[700] text-[24px] md:text-[32px] leading-[25.2px] md:leading-[32px] -tracking-[.04em] max-w-[250px] md:max-w-[300px] text-black`}>Закинем большой пак полезностей для лёгкого старта</p>
@@ -38,10 +31,10 @@ const SendHelperSet: FC = () => {
 
                 <div className="flex flex-row md:flex-col items-start mt-10 md:mt-4 gap-x-3">
                     <div className={`max-w-[60px] md:max-w-[100px] md:w-full`}>
-                        <img src={marina} alt={'Пришлём все исходники после эфира'} className={`md:w-auto md:h-auto object-contain`} />
+                        <img src={marina} alt={'Марина фоточка'} className={`md:w-auto md:h-auto object-contain`} />
                     </div>
                     <div className="w-full md:mt-[32px]">
-                        <p className={`font-[700] text-[24px] md:text-[32px] leading-[25.2px] md:leading-[32px] -tracking-[.04em] max-w-[250px] md:max-w-[300px] text-black`}>Бесплатная консультация и траектория развития</p>
+                        <p className={`font-[700] text-[24px] md:text-[32px] leading-[25.2px] md:leading-[32px] -tracking-[.04em] max-w-[250px] md:max-w-[300px] text-black`}>Бесплатная консультация и <span className="text-nowrap">траектория развития</span></p>
                         <p className="font-[400] text-[16px] leading-[17.6px] text-[#A6A6A6] mt-[12px] md:max-w-[250px]">Марина расскажет по шагам как войти в профессию</p>
                     </div>
                 </div>

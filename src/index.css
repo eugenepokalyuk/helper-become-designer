@@ -73,18 +73,146 @@ img {
 }
 
 .animate-pop {
-    animation: popUp 0.5s ease forwards;
+    animation: popUp 1s ease forwards;
 }
 
 
 @keyframes popUp {
     from {
-        transform: translateY(500px);
+        transform: translateY(300px);
         opacity: 0;
     }
 
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+.animate-cursor {
+    animation: cursorFloat 2s ease-in-out forwards;
+}
+
+@keyframes cursorFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-100px);
+    }
+}
+
+.animate-cursor-around {
+    animation: cursorMoveAround 300ms ease-in-out infinite;
+}
+
+@keyframes cursorMoveAround {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(10px, -10px);
+    }
+
+    50% {
+        transform: translate(0px, -20px);
+    }
+
+    75% {
+        transform: translate(-10px, -10px);
+    }
+}
+
+.animate-cursor-smooth-you {
+    animation: cursorSmoothMoveYou 3s forwards ease-in-out;
+}
+
+/* @keyframes cursorSmoothMoveYou {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(100px, 4px);
+    }
+
+    50% {
+        transform: translate(120px, 4px);
+    }
+
+    75% {
+        transform: translate(220px, 12px);
+    }
+} */
+
+@keyframes cursorSmoothMoveYou {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(100px, 300px);
+    }
+
+    50% {
+        transform: translate(80px, 200px);
+    }
+
+    75% {
+        transform: translate(60px, 100px);
+    }
+}
+
+.animate-cursor-smooth-we {
+    animation: cursorSmoothMoveWe 3s forwards ease-in-out;
+}
+
+@keyframes cursorSmoothMoveWe {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(-40px, 300px);
+    }
+
+    50% {
+        transform: translate(-160px, 305px);
+    }
+
+    75% {
+        transform: translate(-40px, 180px);
+    }
+}
+
+@keyframes cursorSmoothMove {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(10px, -10px);
+    }
+
+    50% {
+        transform: translate(20px, 0);
+    }
+
+    75% {
+        transform: translate(10px, 10px);
     }
 }
