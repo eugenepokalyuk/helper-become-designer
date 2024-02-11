@@ -40,18 +40,12 @@ const UIWorkshopBanner: React.FC = () => {
                         <img
                             src={CursorYou}
                             alt="Cursor You"
-                            // className={`absolute w-[85px] md:w-[200px] h-auto top-[7rem] md:top-[13rem] -left-[0.5rem] md:-left-[4rem] cursor-you ${cursorClass}`}
-                            // className={`absolute w-[85px] md:w-[200px] h-auto top-[7rem] md:top-[13rem] -left-[0.5rem] md:-left-[4rem] cursor-you ${window.innerWidth > 425 && isHovered ? 'animate-cursor' : ''} ${cursorClass}`}
-                            // className={`absolute w-[85px] md:w-[200px] h-auto top-[7rem] md:top-[13rem] -left-[0.5rem] md:-left-[4rem] cursor-you ${cursorClass} ${isHovered ? 'animate-cursor-around' : ''}`}
-                            className={`absolute w-[85px] md:w-[200px] h-auto top-[7rem] md:top-[13rem] -left-[0.5rem] md:-left-[4rem] cursor-you ${cursorClass} ${window.innerWidth > 425 && isHovered ? 'animate-cursor-smooth-you' : ''}`}
+                            className={`absolute w-[85px] md:w-[200px] h-auto top-[23%] md:top-[13rem] -left-[0%] md:-left-[4rem] cursor-you ${cursorClass} ${window.innerWidth > 425 && isHovered ? 'animate-cursor-smooth-you' : ''}`}
                         />
                         <img
                             src={CursorWe}
                             alt="Cursor We"
-                            // className={`absolute w-[60px] md:w-[150px] h-auto top-[7rem] md:top-[14rem] -right-[1.5rem] md:-right-[6rem] cursor-we ${cursorClass} `}
-                            // className={`absolute w-[60px] md:w-[150px] h-auto top-[7rem] md:top-[14rem] -right-[1.5rem] md:-right-[6rem] cursor-we ${window.innerWidth > 425 && isHovered ? 'animate-cursor' : ''} ${cursorClass}`}
-                            // className={`absolute w-[60px] md:w-[150px] h-auto top-[7rem] md:top-[14rem] -right-[1.5rem] md:-right-[6rem] cursor-we ${cursorClass} ${isHovered ? 'animate-cursor-around' : ''}`}
-                            className={`absolute w-[60px] md:w-[150px] h-auto top-[7rem] md:top-[14rem] -right-[1.5rem] md:-right-[6rem] cursor-we ${cursorClass} ${window.innerWidth > 425 && isHovered ? 'animate-cursor-smooth-we' : ''}`}
+                            className={`absolute w-[60px] md:w-[150px] h-auto top-[25%] md:top-[14rem] -right-[8%] md:-right-[6rem] cursor-we ${cursorClass} ${window.innerWidth > 425 && isHovered ? 'animate-cursor-smooth-we' : ''}`}
                         />
                     </div>
 
