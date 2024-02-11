@@ -77,7 +77,7 @@ const ExperienceShowcase: React.FC = () => {
             </div>
 
             <div className="max-md:hidden rounded-[30px] overflow-hidden mt-8">
-                <video src={video} className="w-full rounded-[30px]" autoPlay muted />
+                <video src={video} className="w-full rounded-[30px]" autoPlay muted loop />
             </div>
 
             <div className="md:hidden rounded-[30px] overflow-hidden mt-8 w-full h-[580px]">
