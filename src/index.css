@@ -68,6 +68,11 @@ img {
     border-image: linear-gradient(45deg, #3D8BFF, #AB23FF) 1;
 }
 
+.svg-path-none path:first-child {
+    fill: none;
+    stroke: none;
+}
+
 .no-wrap {
     white-space: nowrap;
 }

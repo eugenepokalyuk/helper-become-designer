@@ -1,6 +1,6 @@
 import React from 'react';
-import Subtract from '../assets/icons/Subtract.png';
-
+// import Subtract from '../assets/icons/Subtract.png';
+import { ReactComponent as LightIcon } from '../assets/lightning.svg';
 const ProductDesignerAd: React.FC = () => {
     return (
         <div className="rounded-lg text-white text-center mt-[1rem] mb-[120px] md:mb-[80px] md:mb-0">
@@ -11,7 +11,6 @@ const ProductDesignerAd: React.FC = () => {
             <h1 className="text-[60px] md:text-[145px] font-[700] leading-[48px] md:leading-[116px] -tracking-[0.06em] mt-[48px] mb-[26px]">
                 Как стать дизайнером продукта
             </h1>
-            {/* <p className="font-[500] text-[35px] leading-[35px] -tracking-[0.04em] pt-2 mb-[70px]">с нуля и зарабатывать 145 000₽/мес</p> */}
             <p className="font-[500] text-[20px] md:text-[35px] leading-[22px] md:leading-[35px] -tracking-[0.04em] pt-2 mb-[70px] w-[220px] mx-auto md:w-full">
                 с нуля и зарабатывать 145 000₽/мес
             </p>
@@ -20,12 +19,9 @@ const ProductDesignerAd: React.FC = () => {
                 Зарегистрироваться
             </button>
 
-            {/* <div className="max-w-xs md:max-w-sm lg:max-w-[450px] mx-auto mt-6 md:mt-10">
-                <p className='relative text-sm md:text-base lg:text-[21px] leading-tight md:leading-snug lg:leading-[23px]'>{sad} Будет полезно людям без опыта, начинающим и тем, кто хочет сменить направление</p>
-            </div> */}
-
             <div className="relative max-w-[350px] md:max-w-[450px] mx-auto mt-[30px] flex flex-row">
-                <img src={Subtract} className='absolute w-4 h-4 object-contain left-3 md:left-6 md:top-1' />
+                {/* <img src={Subtract} className='absolute w-4 h-4 object-contain left-3 md:left-6 md:top-1' /> */}
+                <LightIcon className='absolute w-4 h-4 svg-path-none object-contain left-3 md:left-6 md:top-1' />
                 <p className='flex relative font-[700] text-[16px] md:text-[21px] leading-[17.6px] md:leading-[23px] -tracking-[-0.67px]'>Будет полезно людям без опыта, начинающим и тем, кто хочет сменить направление</p>
             </div>
         </div>
