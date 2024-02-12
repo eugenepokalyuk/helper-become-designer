@@ -31,6 +31,7 @@ const services = [{
 }];
 const App = () => {
   const [bannerVisible, setBannerVisible] = useState<boolean>(true);
+
   const { ref, inView } = useInView({
     threshold: 0.1
   });

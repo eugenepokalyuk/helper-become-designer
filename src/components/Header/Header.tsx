@@ -26,7 +26,7 @@ const Header: FC<HeaderProps> = ({ isScrolled }) => {
 
       <div className='absolute top-0 right-8'>
         <img src={Flag} alt="flag object" className='w-[90px] h-[45px] md:w-full md:h-full' />
-        <p className='absolute top-0 md:top-0 text-center p-[6px] md:p-3 font-[500] text-[8px] md:text-[14px] leading-[9px] md:leading-[15.82px] -tracking-[2%] grad bg-gradient-to-r from-[#49B4BC] via-[#96C794] via-[#BBD080] to-[#57C552] inline-block text-transparent bg-clip-text z-20'>Проект студии MAX. Топ 10 студий РФ (Tagline 2023)</p>
+        <p className='absolute top-0 md:top-1.5 text-center p-[6px] md:p-3 font-[500] text-[8px] md:text-[14px] leading-[9px] md:leading-[15.82px] -tracking-[2%] grad bg-gradient-to-r from-[#49B4BC] via-[#96C794] via-[#BBD080] to-[#57C552] inline-block text-transparent bg-clip-text z-20'>Проект студии MAX. Топ 10 студий РФ (Tagline 2023)</p>
       </div>
     </>
   );

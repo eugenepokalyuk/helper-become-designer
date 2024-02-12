@@ -20,7 +20,7 @@ const UIWorkshopBanner: React.FC = () => {
     const cursorClass = window.innerWidth > 425 ? (scrollY > 1500 ? 'animate-pop' : '') : (scrollY > 2200 ? 'animate-pop' : '');
     return (
         <>
-            <div className="bg-white rounded-xl mt-[60px] md:mt-20">
+            <div className="bg-white rounded-[30px] mt-[60px] md:mt-20">
                 <div className='px-4 md:px-10 py-5 md:py-10'>
                     <h1 className='font-[700] text-[42px] md:text-[65px] leading-[40px] md:leading-[61.75px] -tracking-[3px] md:-tracking-[0.04em] md:max-w-[671px] mb-[10px]'>Вместе нарисуем Яндекс Лавку</h1>
                     <p className='font-[400] text-[16px] md:text-[24px] leading-[16px] md:leading-[24px] -tracking-[0.3px] md:-tracking-[0.5px] opacity-[32%] max-w-[400px] mb-[32px] md:mb-[70px]'>Вместе в прямом эфире с нуля соберём приложение «Лавки»</p>

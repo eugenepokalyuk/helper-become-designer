@@ -4,23 +4,18 @@ import calendarImage from '../assets/images/calendar-image.webp';
 import calendarMobileImage from '../assets/images/calendar-mobile.webp';
 
 const EventAd: React.FC = () => {
-
     const [scrollY, setScrollY] = useState(0);
-
     useEffect(() => {
         const handleScroll = () => {
-            console.log(window.scrollY);
             setScrollY(window.scrollY);
         };
-
         window.addEventListener('scroll', handleScroll);
-
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
-    const cursorClass = window.innerWidth > 425 ? (scrollY > 5200 ? 'animate-pop' : '') : (scrollY > 5900 ? 'animate-pop' : '');
+    const cursorClass = window.innerWidth > 425 ? (scrollY > 5200 ? 'animate-pop' : '') : (scrollY > 4800 ? 'animate-pop' : '');
 
     return (
         <div className={`relative bg-[#ede7df] rounded-[30px] mt-[16rem] md:mt-[12rem] md:mt-24 p-4 `} id="event">
@@ -28,8 +23,9 @@ const EventAd: React.FC = () => {
                 <img
                     src={calendarImage}
                     alt="Calendar desktop image"
-                    className="max-md:hidden absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-[8rem] w-full h-auto object-contain z-10"
+                    className="max-md:hidden absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-[8rem] w-full h-auto object-contain z-10 custom-calendar-desktop"
                 />
+
                 <img
                     src={calendarMobileImage}
                     alt="Calendar mobile image"
@@ -59,7 +55,7 @@ const EventAd: React.FC = () => {
                         href="https://t.me/HelperTeleport_bot"
                         target='_blank'
                     >
-                        <button className="bg-gradient-to-r from-[#4164FD] to-[#1C3ED2] font-[500] text-[25.65px] md:text-[52px] leading-[29.49pxpx] md:leading-[60px] -tracking-[-1.3px] -tracking-[0.65px] px-[50px] md:px-[100px] py-[30px] md:py-[65px] rounded-full transition duration-300 ease-in-out custom-shadows text-white hover:from-[#3956e3] hover:to-[#173daf] transition duration-300 ease-in-out">
+                        <button className="bg-gradient-to-b from-[#4164FD] to-[#1C3ED2] font-[500] text-[25.65px] md:text-[52px] leading-[29.49px] md:leading-[115%] -tracking-[0.65px] md:-tracking-[1.3px] px-[50px] md:px-[100px] py-[30px] md:pt-[62px] md:pb-[72px] rounded-full transition duration-300 ease-in-out custom-shadows text-white hover:from-[#3956e3] hover:to-[#173daf] transition duration-300 ease-in-out max-md:w-full">
                             Зарегистрироваться
                         </button>
                     </a>

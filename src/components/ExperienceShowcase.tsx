@@ -2,13 +2,14 @@ import React from 'react';
 import ChijikIcon from '../assets/icons/chizik-icon.png';
 import SberIcon from '../assets/icons/sber-icon.png';
 import YandexIcon from '../assets/icons/yandex-icon.png';
-import FiveIcon from '../assets/images/companies/company-5chka.png';
-import DocmedIcon from '../assets/images/companies/company-docmed.png';
-import KFCIcon from '../assets/images/companies/company-kfc.png';
-import LentaIcon from '../assets/images/companies/company-lenta.png';
+import FiveIcon from '../assets/images/companies/company-5chka.webp';
+import DocmedIcon from '../assets/images/companies/company-docmed.webp';
+import KFCIcon from '../assets/images/companies/company-kfc.webp';
+import LentaIcon from '../assets/images/companies/company-lenta.webp';
 import Max from '../assets/images/companies/company-max.png';
-import TechnoIcon from '../assets/images/companies/company-tn.png';
-import VkusvillIcon from '../assets/images/companies/company-vkusvill.png';
+import TechnoIcon from '../assets/images/companies/company-tn.webp';
+import VkusvillIcon from '../assets/images/companies/company-vkusvill.webp';
+
 import video from '../assets/video/max_nonda2.mp4';
 
 const ExperienceShowcase: React.FC = () => {
