@@ -29,9 +29,9 @@ const ProductDesignerAd: React.FC = () => {
                 Записаться
             </button>
 
-            <div className="relative max-w-[330px] md:max-w-[450px] mx-auto mt-[30px] flex flex-row">
-                <LightIcon className='absolute w-4 h-4 svg-path-none object-contain left-6 md:left-11 md:top-1' />
-                <p className='relative font-[500] text-[16px] md:text-[21px] leading-[110%] md:leading-[23px] -tracking-[0.67px]'>Будет полезно людям без опыта, <span className='text-nowrap'>начинающим дизайнерам</span> и тем, кто хочет сменить направление</p>
+            <div className="relative max-w-[300px] md:max-w-[350px] mx-auto mt-[30px] flex flex-row">
+                <LightIcon className='absolute w-4 h-4 svg-path-none left-3 md:left-0 object-contain md:top-1' />
+                <p className='flex relative font-[500] text-[16px] md:text-[21px] leading-[110%] md:leading-[23px] -tracking-[0.67px]'>Будет полезно людям без опыта, начинающим дизайнерам и тем, кто хочет сменить направление</p>
             </div>
         </div>
     );
