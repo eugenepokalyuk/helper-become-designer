@@ -18,7 +18,10 @@ const EventAd: React.FC = () => {
     const cursorClass = window.innerWidth > 425 ? (scrollY > 5200 ? 'animate-pop' : '') : (scrollY > 4800 ? 'animate-pop' : '');
 
     return (
-        <div className={`relative bg-[#ede7df] rounded-[30px] mt-[16rem] md:mt-[12rem] md:mt-24 p-4 `} id="event">
+        <div
+            className={`relative bg-[#ede7df] rounded-[30px] mt-[16rem] md:mt-[12rem] md:mt-24 p-4 `}
+            id="event"
+        >
             <div className={`relative w-full z-10 h-[5rem] md:h-[18rem] ${cursorClass}`}>
                 <img
                     src={calendarImage}

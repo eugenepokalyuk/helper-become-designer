@@ -10,7 +10,7 @@ const ProductDesignerAd: React.FC = () => {
     };
 
     return (
-        <div className="rounded-lg text-white text-center mt-[1rem] mb-[120px] md:mb-[80px] md:mb-0">
+        <div className="rounded-lg text-white text-center mt-[1rem] mb-[120px] md:mb-0">
             <div className="font-[500] text-[20px] md:text-[35px] leading-[22px] md:leading-[35px] -tracking-[0.04em]">
                 <p>15 февраля в 19:00</p>
                 <p className='opacity-70'>Бесплатный отрытый урок</p>
@@ -23,15 +23,15 @@ const ProductDesignerAd: React.FC = () => {
             </p>
 
             <button
-                className="max-md:flex max-md:justify-center bg-gradient-to-b from-[#4164FD] to-[#1C3ED2] font-[500] text-[25.65px] md:text-[52px] leading-[29.49pxpx] md:leading-[60px] -tracking-[-1.3px] -tracking-[0.65px] px-[50px] md:px-[135px] py-[30px] md:pt-[62px] md:pb-[72px] rounded-full transition duration-300 ease-in-out text-white hover:from-[#3956e3] hover:to-[#173daf] transition duration-300 ease-in-out max-md:w-full custom-shadows"
+                className={`max-md:flex max-md:justify-center bg-gradient-to-b from-[#4164FD] to-[#1C3ED2] font-[500] text-[25.65px] md:text-[52px] leading-[29.49pxpx] md:leading-[60px] -tracking-[-1.3px] -tracking-[0.65px] px-[50px] md:px-[135px] py-[30px] md:pt-[62px] md:pb-[72px] rounded-full transition duration-300 ease-in-out text-white hover:from-[#3956e3] hover:to-[#173daf] transition duration-300 ease-in-out max-md:w-full ${window.innerWidth > 425 ? 'custom-shadows' : 'custom-shadows-mobile'}`}
                 onClick={() => scrollToElement('event')}
             >
                 Записаться
             </button>
 
-            <div className="relative max-w-[350px] md:max-w-[450px] mx-auto mt-[30px] flex flex-row">
-                <LightIcon className='absolute w-4 h-4 svg-path-none object-contain left-3.5 md:left-6 md:top-1' />
-                <p className='flex relative font-[500] text-[16px] md:text-[21px] leading-[110%] md:leading-[23px] -tracking-[-0.67px]'>Будет полезно людям без опыта, начинающим дизайнерам и тем, кто хочет сменить направление</p>
+            <div className="relative max-w-[330px] md:max-w-[450px] mx-auto mt-[30px] flex flex-row">
+                <LightIcon className='absolute w-4 h-4 svg-path-none object-contain left-6 md:left-11 md:top-1' />
+                <p className='relative font-[500] text-[16px] md:text-[21px] leading-[110%] md:leading-[23px] -tracking-[0.67px]'>Будет полезно людям без опыта, <span className='text-nowrap'>начинающим дизайнерам</span> и тем, кто хочет сменить направление</p>
             </div>
         </div>
     );

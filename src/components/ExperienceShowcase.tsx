@@ -1,12 +1,13 @@
 import React from 'react';
-import ChijikIcon from '../assets/icons/chizik-icon.png';
 import SberIcon from '../assets/icons/sber-icon.png';
 import YandexIcon from '../assets/icons/yandex-icon.png';
+import Max from '../assets/images/companies/company-max.png';
+
 import FiveIcon from '../assets/images/companies/company-5chka.webp';
+import ChijikIcon from '../assets/images/companies/company-chizik.webp';
 import DocmedIcon from '../assets/images/companies/company-docmed.webp';
 import KFCIcon from '../assets/images/companies/company-kfc.webp';
 import LentaIcon from '../assets/images/companies/company-lenta.webp';
-import Max from '../assets/images/companies/company-max.png';
 import TechnoIcon from '../assets/images/companies/company-tn.webp';
 import VkusvillIcon from '../assets/images/companies/company-vkusvill.webp';
 
