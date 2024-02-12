@@ -6,7 +6,7 @@ import LavkaImage from '../assets/images/lavka/lavka_screen.png';
 
 const UIWorkshopBanner: React.FC = () => {
     const [scrollY, setScrollY] = useState(0);
-    const [isHovered, setIsHovered] = useState(false);
+    // const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -34,18 +34,18 @@ const UIWorkshopBanner: React.FC = () => {
                             src={LavkaImage}
                             alt="Yandex Lavka menu"
                             className="w-full h-auto"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
+                            // onMouseEnter={() => setIsHovered(true)}
+                            // onMouseLeave={() => setIsHovered(false)}
                         />
                         <img
                             src={CursorYou}
                             alt="Cursor You"
-                            className={`absolute w-[85px] md:w-[200px] h-auto top-[23%] md:top-[13rem] -left-[0%] md:-left-[4rem] cursor-you ${cursorClass} ${window.innerWidth > 425 && isHovered ? 'animate-cursor-smooth-you' : ''}`}
+                            className={`absolute w-[85px] md:w-[200px] h-auto top-[23%] md:top-[13rem] -left-[0%] md:-left-[4rem] cursor-you ${cursorClass} ${cursorClass ? 'animate-cursor-smooth-you' : ''}`}
                         />
                         <img
                             src={CursorWe}
                             alt="Cursor We"
-                            className={`absolute w-[60px] md:w-[150px] h-auto top-[25%] md:top-[14rem] -right-[8%] md:-right-[6rem] cursor-we ${cursorClass} ${window.innerWidth > 425 && isHovered ? 'animate-cursor-smooth-we' : ''}`}
+                            className={`absolute w-[60px] md:w-[150px] h-auto top-[25%] md:top-[14rem] -right-[8%] md:-right-[6rem] cursor-we ${cursorClass} ${cursorClass ? 'animate-cursor-smooth-we' : ''}`}
                         />
                     </div>
 

@@ -76,16 +76,21 @@ const ExperienceShowcase: React.FC = () => {
                 <span className="flex items-center mr-2"><img src={DocmedIcon} className='mr-2 max-w-[46px] max-h-[46px]' />Doc med</span>
             </div>
 
-            <div className="max-md:hidden rounded-[30px] overflow-hidden mt-8">
+            <div className="rounded-[30px] overflow-hidden mt-8">
                 <video src={video} className="w-full rounded-[30px]" autoPlay muted loop />
             </div>
 
-            <div className="md:hidden rounded-[30px] overflow-hidden mt-8 w-full h-[580px]">
+
+            {/* <div className="max-md:hidden rounded-[30px] overflow-hidden mt-8">
+                <video src={video} className="w-full rounded-[30px]" autoPlay muted loop />
+            </div> */}
+
+            {/* <div className="md:hidden rounded-[30px] overflow-hidden mt-8 w-full h-[580px]">
                 <video src={video} className="w-auto h-full rounded-[30px]" autoPlay muted loop playsInline style={{
                     objectFit: 'cover',
                     transform: 'scale(1.5)'
                 }} />
-            </div>
+            </div> */}
 
         </div>
     );

@@ -23,7 +23,7 @@ const EventAd: React.FC = () => {
     const cursorClass = window.innerWidth > 425 ? (scrollY > 5200 ? 'animate-pop' : '') : (scrollY > 5900 ? 'animate-pop' : '');
 
     return (
-        <div className={`relative bg-[#ede7df] rounded-[30px] mt-[16rem] md:mt-[12rem] md:mt-24 p-4 `}>
+        <div className={`relative bg-[#ede7df] rounded-[30px] mt-[16rem] md:mt-[12rem] md:mt-24 p-4 `} id="event">
             <div className={`relative w-full z-10 h-[5rem] md:h-[18rem] ${cursorClass}`}>
                 <img src={calendarImage} alt="Calendar" className="max-md:hidden absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-[8rem] w-full h-auto object-contain z-10" />
                 <img src={calendarMobileImage} alt="Calendar" className="md:hidden absolute top-[6rem] left-1/2 transform -translate-x-1/2 -translate-y-full w-[290px] max-w-lg h-auto object-contain z-10" />
@@ -43,12 +43,14 @@ const EventAd: React.FC = () => {
                 </p>
 
                 <p className="flex items-center justify-center text-lg md:text-xl font-medium text-center max-w-md mx-auto mb-7 md:mb-[65px]">
-                    <TelegramIcon className='w-3 h-3 md:w-5 md:h-5 mr-1 md:mr-2' /><a href="TELEGRAM_LINK" className="text-blue-600 md:font-[500] text-[16px] md:text-[32px] -tracking-[0.3px] md:-tracking-[0.04em]">телеграм-бота</a>
+                    <TelegramIcon className='w-3 h-3 md:w-5 md:h-5 mr-1 md:mr-2' /><a href="https://t.me/HelperTeleport_bot" className="text-blue-600 md:font-[500] text-[16px] md:text-[32px] -tracking-[0.3px] md:-tracking-[0.04em]">телеграм-бота</a>
                 </p>
 
-                <button className='text-center font-[500] text-[25px] md:text-[52px] leading-[30px] md:leading-[60px] -tracking-[1.32px] px-[50px] py-[30px] md:px-[100px] md:py-[60px] bg-gradient-to-r from-[#4164FD] to-[#1C3ED2] rounded-full md:mb-[100px] text-white md:scale-[80%]'>
-                    Зарегистрироваться
-                </button>
+                <div className='pb-[100px]'>
+                    <button className="bg-gradient-to-r from-[#4164FD] to-[#1C3ED2] font-[500] text-[25.65px] md:text-[52px] leading-[29.49pxpx] md:leading-[60px] -tracking-[-1.3px] -tracking-[0.65px] px-[50px] md:px-[100px] py-[30px] md:py-[65px] rounded-full transition duration-300 ease-in-out custom-shadows text-white hover:from-[#3956e3] hover:to-[#173daf] transition duration-300 ease-in-out">
+                        Зарегистрироваться
+                    </button>
+                </div>
             </div>
         </div>
     );

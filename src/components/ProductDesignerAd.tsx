@@ -15,14 +15,15 @@ const ProductDesignerAd: React.FC = () => {
                 с нуля и зарабатывать 145 000₽/мес
             </p>
 
-            <button className="bg-gradient-to-r from-[#4164FD] to-[#1C3ED2] font-[500] text-[25.65px] md:text-[52px] leading-[29.49pxpx] md:leading-[60px] -tracking-[-1.3px] -tracking-[0.65px] px-[50px] md:px-[100px] py-[30px] md:py-[65px] hover:brightness-90 rounded-full transition duration-300 ease-in-out">
-                Зарегистрироваться
-            </button>
+            <a href="#event">
+                <button className="bg-gradient-to-r from-[#4164FD] to-[#1C3ED2] font-[500] text-[25.65px] md:text-[52px] leading-[29.49pxpx] md:leading-[60px] -tracking-[-1.3px] -tracking-[0.65px] px-[50px] md:px-[100px] py-[30px] md:py-[65px] rounded-full transition duration-300 ease-in-out custom-shadows text-white hover:from-[#3956e3] hover:to-[#173daf] transition duration-300 ease-in-out">
+                    Записаться
+                </button>
+            </a>
 
             <div className="relative max-w-[350px] md:max-w-[450px] mx-auto mt-[30px] flex flex-row">
-                {/* <img src={Subtract} className='absolute w-4 h-4 object-contain left-3 md:left-6 md:top-1' /> */}
                 <LightIcon className='absolute w-4 h-4 svg-path-none object-contain left-3 md:left-6 md:top-1' />
-                <p className='flex relative font-[700] text-[16px] md:text-[21px] leading-[17.6px] md:leading-[23px] -tracking-[-0.67px]'>Будет полезно людям без опыта, начинающим и тем, кто хочет сменить направление</p>
+                <p className='flex relative font-[700] text-[16px] md:text-[21px] leading-[17.6px] md:leading-[23px] -tracking-[-0.67px]'>Будет полезно людям без опыта, начинающим дизайнерам и тем, кто хочет сменить направление</p>
             </div>
         </div>
     );

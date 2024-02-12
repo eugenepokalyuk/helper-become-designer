@@ -201,3 +201,18 @@ img {
         transform: translate(10px, 10px);
     }
 }
+
+.custom-shadows {
+    -webkit-box-shadow: 0px 100px 100px -60px rgba(34, 60, 80, 0.4);
+    -moz-box-shadow: 0px 100px 100px -60px rgba(34, 60, 80, 0.4);
+    box-shadow: 0px 100px 100px -60px rgba(34, 60, 80, 0.4);
+}
+
+.footer-link {
+    transition: .2s;
+}
+
+.footer-link:hover {
+    color: #0f1414;
+    text-decoration: underline;
+}

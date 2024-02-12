@@ -17,6 +17,9 @@ import SendHelperSet from "../SendHelperSet"
 import ServiceInterfaceShowcaseCard from '../ServiceInterfaceShowcaseCard'
 import UIWorkshopBanner from '../UIWorkshopBanner'
 import WhyChooseDesigning from '../WhyChooseDesigning'
+
+import { useInView } from 'react-intersection-observer'
+
 const services = [{
   logo: CompanyMegaImage,
   description: `Больше 30 млн посетителей в мес`
@@ -31,28 +34,43 @@ const services = [{
   description: "~15 млн активных покупателей"
 }];
 const App = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
+  const [bannerVisible, setBannerVisible] = useState<boolean>(true);
+  const { ref, inView } = useInView({
+    threshold: 0.1
+  });
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 2500) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+    if (inView) {
+      setBannerVisible(false)
+    } else {
+      setBannerVisible(true)
+    }
+  }, [inView]);
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     console.log(window.scrollY);
+  //     if (window.scrollY > 1000) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
 
   return (
     <>
       <Gradient />
-      <Header isScrolled={isScrolled ? true : false} />
+      <Header isScrolled={bannerVisible} />
       <div className="max-w-[1024px] mx-auto px-4 pb-[50px] pt-[50px]">
         <main>
-          <ProductDesignerAd />
+          <div ref={ref}>
+            <ProductDesignerAd />
+          </div>
           <WhyChooseDesigning />
           <ServiceInterfaceShowcaseCard services={services} />
           <RealtimeDesignBanner />
