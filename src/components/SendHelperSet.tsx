@@ -10,7 +10,7 @@ const SendHelperSet: FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-baseline">
 
                 <div className="flex flex-row md:flex-col items-start mt-10 md:mt-4 gap-x-3">
-                    <div className={`max-w-[60px] md:max-w-[100px] md:w-full`}>
+                    <div className={`w-[60px] md:max-w-[100px] md:w-full`}>
                         <img src={figma} alt={'Фигма логотип'} className={`md:w-auto md:h-auto object-contain`} />
                     </div>
                     <div className="w-full md:mt-[32px]">
@@ -20,7 +20,7 @@ const SendHelperSet: FC = () => {
                 </div>
 
                 <div className="flex flex-row md:flex-col items-start mt-10 md:mt-4 gap-x-3">
-                    <div className={`max-w-[60px] md:max-w-[100px] md:w-full`}>
+                    <div className={`w-[60px] md:max-w-[100px] md:w-full`}>
                         <img src={notion} alt={'Ноушн логотип'} className={`md:w-auto md:h-auto object-contain`} />
                     </div>
                     <div className="w-full md:mt-[32px]">
@@ -30,7 +30,7 @@ const SendHelperSet: FC = () => {
                 </div>
 
                 <div className="flex flex-row md:flex-col items-start mt-10 md:mt-4 gap-x-3">
-                    <div className={`max-w-[60px] md:max-w-[100px] md:w-full`}>
+                    <div className={`w-[60px] md:max-w-[100px] md:w-full`}>
                         <img src={marina} alt={'Марина фоточка'} className={`md:w-auto md:h-auto object-contain`} />
                     </div>
                     <div className="w-full md:mt-[32px]">

@@ -5,6 +5,13 @@ interface HeaderProps {
   isScrolled: boolean;
 }
 const Header: FC<HeaderProps> = ({ isScrolled }) => {
+  const scrollToElement = (elementId: any) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <>
       <header className={`fixed py-[13px] px-[20px] pt-0 flex justify-between w-full z-30 ${isScrolled ? 'header-scrolled pt-3' : 'header-not-scrolled'}`}>
@@ -15,11 +22,12 @@ const Header: FC<HeaderProps> = ({ isScrolled }) => {
         {isScrolled && (
           <div className="flex items-center">
             <p className='font-[400] text-[14px] leading-[16.9px] mr-4'>15 февраля в 19:00</p>
-            <a href="#event">
-              <button className="bg-gradient-to-r from-[#4164FD] to-[#1C3ED2] font-[400] text-[14px] leading-[16.8px] px-[12px] py-[5px] rounded-full transition duration-300 ease-in-out text-white">
-                Записаться
-              </button>
-            </a>
+            <button
+              className="bg-gradient-to-r from-[#4164FD] to-[#1C3ED2] font-[400] text-[14px] leading-[16.8px] px-[12px] py-[5px] rounded-full transition duration-300 ease-in-out text-white"
+              onClick={() => scrollToElement('event')}
+            >
+              Записаться
+            </button>
           </div>
         )}
       </header>

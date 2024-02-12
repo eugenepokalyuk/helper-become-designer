@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ReactComponent as TelegramIcon } from '../assets/icons/tg-icon.svg';
 import calendarImage from '../assets/images/calendar-image.webp';
-import calendarMobileImage from '../assets/images/calendar-mobile.webp';
+import calendarMobileImage from '../assets/images/calendar-mobile.png';
 
 const EventAd: React.FC = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -50,12 +50,12 @@ const EventAd: React.FC = () => {
                     <TelegramIcon className='w-3 h-3 md:w-5 md:h-5 mr-1 md:mr-2' /><a href="https://t.me/HelperTeleport_bot" className="text-blue-600 md:font-[500] text-[16px] md:text-[32px] -tracking-[0.3px] md:-tracking-[0.04em]">телеграм-бота</a>
                 </p>
 
-                <div className='pb-[100px]'>
+                <div className='md:pb-[100px]'>
                     <a
                         href="https://t.me/HelperTeleport_bot"
                         target='_blank'
                     >
-                        <button className="bg-gradient-to-b from-[#4164FD] to-[#1C3ED2] font-[500] text-[25.65px] md:text-[52px] leading-[29.49px] md:leading-[115%] -tracking-[0.65px] md:-tracking-[1.3px] px-[50px] md:px-[100px] py-[30px] md:pt-[62px] md:pb-[72px] rounded-full transition duration-300 ease-in-out custom-shadows text-white hover:from-[#3956e3] hover:to-[#173daf] transition duration-300 ease-in-out max-md:w-full">
+                        <button className="max-md:flex max-md:justify-center bg-gradient-to-b from-[#4164FD] to-[#1C3ED2] font-[500] text-[25.65px] md:text-[52px] leading-[29.49px] md:leading-[115%] -tracking-[0.65px] md:-tracking-[1.3px] px-[50px] md:px-[100px] py-[30px] md:pt-[62px] md:pb-[72px] rounded-full transition duration-300 ease-in-out custom-shadows text-white hover:from-[#3956e3] hover:to-[#173daf] transition duration-300 ease-in-out max-md:w-full">
                             Зарегистрироваться
                         </button>
                     </a>
