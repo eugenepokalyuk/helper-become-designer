@@ -1,5 +1,5 @@
 import React from 'react';
-import hostImage from '../assets/images/max.png';
+import hostImage from '../assets/images/max.webp';
 
 const HostIntroduction: React.FC = () => {
     return (

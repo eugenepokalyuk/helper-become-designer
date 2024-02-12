@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react"
-
+import { useInView } from 'react-intersection-observer'
 import CompanyYandexMarketImage from '../../assets/images/companies/company-market.png'
 import CompanyMegaImage from '../../assets/images/companies/company-mega.png'
 import CompanyOzonImage from '../../assets/images/companies/company-ozon.png'
 import CompanyYandexTaxiImage from '../../assets/images/companies/company-ytaxi.png'
-
 import EventAd from "../EventAd"
 import ExperienceShowcase from '../ExperienceShowcase'
 import Footer from "../Footer/Footer"
@@ -17,9 +16,6 @@ import SendHelperSet from "../SendHelperSet"
 import ServiceInterfaceShowcaseCard from '../ServiceInterfaceShowcaseCard'
 import UIWorkshopBanner from '../UIWorkshopBanner'
 import WhyChooseDesigning from '../WhyChooseDesigning'
-
-import { useInView } from 'react-intersection-observer'
-
 const services = [{
   logo: CompanyMegaImage,
   description: `Больше 30 млн посетителей в мес`
@@ -34,7 +30,6 @@ const services = [{
   description: "~15 млн активных покупателей"
 }];
 const App = () => {
-  // const [isScrolled, setIsScrolled] = useState(false);
   const [bannerVisible, setBannerVisible] = useState<boolean>(true);
   const { ref, inView } = useInView({
     threshold: 0.1
@@ -47,20 +42,6 @@ const App = () => {
       setBannerVisible(true)
     }
   }, [inView]);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     console.log(window.scrollY);
-  //     if (window.scrollY > 1000) {
-  //       setIsScrolled(true);
-  //     } else {
-  //       setIsScrolled(false);
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
 
   return (
     <>

@@ -1,6 +1,4 @@
 import { FC } from "react";
-// import companies from '../assets/images/companies/icon-companies-logo.png';
-// import graph from '../assets/images/graph.png';
 import lady from '../assets/images/lady.png';
 import memoji2 from '../assets/images/memoji2.png';
 import memoji3 from '../assets/images/memoji3.png';

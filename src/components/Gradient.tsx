@@ -1,11 +1,10 @@
 import React from 'react';
-import GradientImage from '../assets/images/gradient.png';
+import GradientImage from '../assets/images/gradient.webp';
 
 const Gradient: React.FC = () => {
     return (
-        <div className="absolute w-screen h-[350vh] z-[-10]">
-            {/* <div className="absolute h-screen w-screen bg-gradient-to-tl from-transparent via-blue-300 to-transparent -inset-1 opacity-25" /> */}
-            <img src={GradientImage} alt="" className='w-full h-full' />
+        <div className="absolute w-full h-[350vh] z-[-10]">
+            <img src={GradientImage} alt="gradient image" className='w-full h-full' />
         </div>
     );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
-// import Subtract from '../assets/icons/Subtract.png';
 import { ReactComponent as LightIcon } from '../assets/lightning.svg';
+
 const ProductDesignerAd: React.FC = () => {
     return (
         <div className="rounded-lg text-white text-center mt-[1rem] mb-[120px] md:mb-[80px] md:mb-0">

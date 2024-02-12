@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import LavkaGuidesImage from '../assets/images/lavka-guides.png';
-import CursorWe from '../assets/images/lavka/cursor_we.png';
-import CursorYou from '../assets/images/lavka/cursor_you.png';
-import LavkaImage from '../assets/images/lavka/lavka_screen.png';
+import LavkaGuidesImage from '../assets/images/lavka-guides.webp';
+import CursorWe from '../assets/images/lavka/cursor_we.webp';
+import CursorYou from '../assets/images/lavka/cursor_you.webp';
+import LavkaImage from '../assets/images/lavka/lavka_screen.webp';
 
 const UIWorkshopBanner: React.FC = () => {
     const [scrollY, setScrollY] = useState(0);
-    // const [isHovered, setIsHovered] = useState(false);
-
     useEffect(() => {
         const handleScroll = () => {
             setScrollY(window.scrollY);
@@ -19,9 +17,7 @@ const UIWorkshopBanner: React.FC = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
     const cursorClass = window.innerWidth > 425 ? (scrollY > 1500 ? 'animate-pop' : '') : (scrollY > 2200 ? 'animate-pop' : '');
-
     return (
         <>
             <div className="bg-white rounded-xl mt-[60px] md:mt-20">
@@ -34,8 +30,6 @@ const UIWorkshopBanner: React.FC = () => {
                             src={LavkaImage}
                             alt="Yandex Lavka menu"
                             className="w-full h-auto"
-                            // onMouseEnter={() => setIsHovered(true)}
-                            // onMouseLeave={() => setIsHovered(false)}
                         />
                         <img
                             src={CursorYou}
@@ -58,7 +52,11 @@ const UIWorkshopBanner: React.FC = () => {
                 </div>
 
                 <div className="mx-auto mt-4 md:mt-0">
-                    <img src={LavkaGuidesImage} alt="Yandex Lavka guides" className="w-full md:w-1/2 mx-auto h-full" />
+                    <img
+                        src={LavkaGuidesImage}
+                        alt="Yandex Lavka guides"
+                        className="w-full md:w-1/2 mx-auto h-full"
+                    />
                 </div>
             </div>
         </>

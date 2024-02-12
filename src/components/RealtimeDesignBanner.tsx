@@ -13,7 +13,11 @@ const RealtimeDesignBanner: React.FC = () => {
                 ...и докажем, что это может
                 <span className="ml-1 relative inline-block">
                     сделать каждый
-                    <img src={CustomUnderline} className="absolute bottom-0 top-6 md:top-8 left-0 w-full scale-[110%] md:scale-[100%] h-auto" alt="Custom Underline" />
+                    <img
+                        src={CustomUnderline}
+                        className="absolute bottom-0 top-6 md:top-8 left-0 w-full scale-[110%] md:scale-[100%] h-auto"
+                        alt="Custom Underline"
+                    />
                 </span>
             </p>
         </div>
