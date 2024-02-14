@@ -33,11 +33,11 @@ const WhyChooseDesigningList = () => {
 
             <div className="flex flex-row md:flex-col items-start mt-10 md:mt-4 gap-x-3">
                 <div className='max-w-[100px] md:max-w-[200px] md:w-full'>
-                    <img src={memoji3} alt={'IT-профессия в которой не нужно программировать'} className={`max-md:hidden md:w-[200px] md:max-h-[200px] object-contain`} />
+                    <img src={memoji3} alt={'IT-профессия, в которой не нужно программировать'} className={`max-md:hidden md:w-[200px] md:max-h-[200px] object-contain`} />
                     <img src={memoji3Mobile} alt={'Средняя зп со старта — 145 000 ₽/мес'} className={`md:hidden md:w-[200px] md:max-h-[200px] object-contain`} />
                 </div>
                 <div className="w-full">
-                    <p className={`font-[700] text-[24px] md:text-[32px] leading-[25.2px] md:leading-[32px] -tracking-[.04em] max-w-[250px] md:max-w-[300px] text-black`}>{'IT-профессия в которой не нужно программировать'}</p>
+                    <p className={`font-[700] text-[24px] md:text-[32px] leading-[25.2px] md:leading-[32px] -tracking-[.04em] max-w-[250px] md:max-w-[300px] text-black`}>{'IT-профессия, в которой не нужно программировать'}</p>
                     <p className="font-[400] text-[16px] leading-[17.6px] text-[#9F9F9F] mt-[8px] md:max-w-[250px]">Это креативная IT профессия которой может обучится каждый</p>
                 </div>
             </div>
