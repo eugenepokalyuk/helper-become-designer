@@ -19,7 +19,7 @@ const EventAd: React.FC = () => {
 
     return (
         <div
-            className={`relative bg-[#ede7df] rounded-[30px] mt-[16rem] md:mt-[12rem] md:mt-24 p-4 `}
+            className={`relative bg-[#ede7df] rounded-[30px] mt-[16rem] md:mt-[16rem] md:mt-24 p-4 `}
             id="event"
         >
             <div className={`relative w-full z-10 h-[5rem] md:h-[18rem] ${cursorClass}`}>
