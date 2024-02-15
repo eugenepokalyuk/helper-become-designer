@@ -19,7 +19,7 @@ const ProductDesignerAd: React.FC = () => {
                 Как стать дизайнером продукта
             </h1>
             <p className="font-[500] text-[20px] md:text-[35px] leading-[22px] md:leading-[35px] -tracking-[0.04em] pt-2 mb-[70px] w-[220px] mx-auto md:w-full">
-                с нуля и зарабатывать 145 000₽/мес
+                с нуля и зарабатывать от 110 000₽/мес
             </p>
 
             <button

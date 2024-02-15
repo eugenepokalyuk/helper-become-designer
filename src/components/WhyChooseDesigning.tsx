@@ -11,11 +11,11 @@ const WhyChooseDesigningList = () => {
         <>
             <div className="flex flex-row md:flex-col items-start mt-10 md:mt-4 gap-x-3">
                 <div className='max-w-[100px] md:max-w-[200px] md:w-full'>
-                    <img src={memoji1} alt={'Средняя зп со старта — 145 000 ₽/мес'} className={`max-md:hidden md:w-[200px] md:max-h-[200px] object-contain`} />
-                    <img src={memoji1Mobile} alt={'Средняя зп со старта — 145 000 ₽/мес'} className={`md:hidden md:w-[200px] md:max-h-[200px] object-contain`} />
+                    <img src={memoji1} alt={'Средняя зп со старта — 110 000 ₽/мес'} className={`max-md:hidden md:w-[200px] md:max-h-[200px] object-contain`} />
+                    <img src={memoji1Mobile} alt={'Средняя зп со старта — 110 000 ₽/мес'} className={`md:hidden md:w-[200px] md:max-h-[200px] object-contain`} />
                 </div>
                 <div className="w-full h-auto">
-                    <p className={`font-[700] text-[24px] md:text-[32px] leading-[25.2px] md:leading-[32px] -tracking-[.04em] max-w-[250px] md:max-w-[300px] text-black`}>Средняя зп со старта — <span className="text-nowrap">145 000 ₽/мес</span></p>
+                    <p className={`font-[700] text-[24px] md:text-[32px] leading-[25.2px] md:leading-[32px] -tracking-[.04em] max-w-[250px] md:max-w-[300px] text-black`}>Средняя зп со старта — <span className="text-nowrap">110 000 ₽/мес</span></p>
                     <p className="font-[400] text-[16px] leading-[17.6px] text-[#9F9F9F] mt-[8px] md:max-w-[250px]">Это в среднем на 30 тыс ₽/мес больше, чем  в других областях креативной it индустрии.</p>
                 </div>
             </div>
@@ -23,7 +23,7 @@ const WhyChooseDesigningList = () => {
             <div className="flex flex-row md:flex-col items-start mt-10 md:mt-4 gap-x-3">
                 <div className='max-w-[100px] md:max-w-[200px] md:w-full'>
                     <img src={memoji2} alt={'Надёжные работодатели и крутые условия'} className={`max-md:hidden md:w-[200px] md:max-h-[200px] object-contain`} />
-                    <img src={memoji2Mobile} alt={'Средняя зп со старта — 145 000 ₽/мес'} className={`md:hidden md:w-[200px] md:max-h-[200px] object-contain`} />
+                    <img src={memoji2Mobile} alt={'Средняя зп со старта — 110 000 ₽/мес'} className={`md:hidden md:w-[200px] md:max-h-[200px] object-contain`} />
                 </div>
                 <div className="w-full">
                     <p className={`font-[700] text-[24px] md:text-[32px] leading-[25.2px] md:leading-[32px] -tracking-[.04em] max-w-[250px] md:max-w-[300px] text-black`}>{'Надёжные работодатели и крутые условия'}</p>
@@ -34,7 +34,7 @@ const WhyChooseDesigningList = () => {
             <div className="flex flex-row md:flex-col items-start mt-10 md:mt-4 gap-x-3">
                 <div className='max-w-[100px] md:max-w-[200px] md:w-full'>
                     <img src={memoji3} alt={'IT-профессия, в которой не нужно программировать'} className={`max-md:hidden md:w-[200px] md:max-h-[200px] object-contain`} />
-                    <img src={memoji3Mobile} alt={'Средняя зп со старта — 145 000 ₽/мес'} className={`md:hidden md:w-[200px] md:max-h-[200px] object-contain`} />
+                    <img src={memoji3Mobile} alt={'Средняя зп со старта — 110 000 ₽/мес'} className={`md:hidden md:w-[200px] md:max-h-[200px] object-contain`} />
                 </div>
                 <div className="w-full">
                     <p className={`font-[700] text-[24px] md:text-[32px] leading-[25.2px] md:leading-[32px] -tracking-[.04em] max-w-[250px] md:max-w-[300px] text-black`}>{'IT-профессия, в которой не нужно программировать'}</p>
