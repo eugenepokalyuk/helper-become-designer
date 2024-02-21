@@ -12,7 +12,7 @@ const ProductDesignerAd: React.FC = () => {
     return (
         <div className="rounded-lg text-white text-center mt-[1rem] mb-[120px] md:mb-0">
             <div className="font-[500] text-[20px] md:text-[35px] leading-[22px] md:leading-[35px] -tracking-[0.04em]">
-                <p>20 февраля в 19:00</p>
+                <p>27 февраля в 19:00</p>
                 <p className='opacity-70'>Бесплатный отрытый урок</p>
             </div>
             <h1 className="text-[60px] md:text-[145px] font-[700] leading-[48px] md:leading-[116px] -tracking-[0.06em] mt-[48px] mb-[26px]">

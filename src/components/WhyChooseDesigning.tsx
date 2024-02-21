@@ -38,7 +38,7 @@ const WhyChooseDesigningList = () => {
                 </div>
                 <div className="w-full">
                     <p className={`font-[700] text-[24px] md:text-[32px] leading-[25.2px] md:leading-[32px] -tracking-[.04em] max-w-[250px] md:max-w-[300px] text-black`}>{'IT-профессия, в которой не нужно программировать'}</p>
-                    <p className="font-[400] text-[16px] leading-[17.6px] text-[#9F9F9F] mt-[8px] md:max-w-[250px]">Это креативная IT профессия которой может обучится каждый</p>
+                    <p className="font-[400] text-[16px] leading-[17.6px] text-[#9F9F9F] mt-[8px] md:max-w-[250px]">Это креативная IT профессия которой может обучиться каждый</p>
                 </div>
             </div>
         </>

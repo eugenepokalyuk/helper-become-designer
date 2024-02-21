@@ -21,7 +21,7 @@ const Header: FC<HeaderProps> = ({ isScrolled }) => {
 
         {isScrolled && (
           <div className="flex items-center">
-            <p className='font-[400] text-[14px] leading-[16.9px] mr-4'>20 февраля в 19:00</p>
+            <p className='font-[400] text-[14px] leading-[16.9px] mr-4'>27 февраля в 19:00</p>
             <button
               className="bg-gradient-to-r from-[#4164FD] to-[#1C3ED2] font-[400] text-[14px] leading-[16.8px] px-[12px] py-[5px] rounded-full transition duration-300 ease-in-out text-white"
               onClick={() => scrollToElement('event')}

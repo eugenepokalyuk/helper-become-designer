@@ -37,12 +37,12 @@ const EventAd: React.FC = () => {
             </div>
 
             <div className='relative flex flex-col w-full z-20 text-center'>
-                <div className="max-md:hidden text-center mt-4 mb-4">
-                    <h1 className="font-[700] md:text-[150px] md:leading-[124px] -tracking-[0.04em]">20 февраля <span className="text-blue-600">бесплатно</span></h1>
+                <div className="max-md:hidden text-center mt-20 mb-4">
+                    <h1 className="font-[700] md:text-[150px] md:leading-[124px] -tracking-[0.04em]">27 февраля <span className="text-blue-600">бесплатно</span></h1>
                 </div>
 
                 <div className="md:hidden flex justify-center text-center mt-0 mb-4">
-                    <h1 className="font-[700] text-[70px] leading-[56px] -tracking-[0.07em]">20 фев <span className="text-blue-600">Бесплатно</span></h1>
+                    <h1 className="font-[700] text-[70px] leading-[56px] -tracking-[0.07em]">27 фев <span className="text-blue-600">Бесплатно</span></h1>
                 </div>
 
                 <p className="font-[500] text-[16px] md:text-[32px] leading-[16px] md:leading-[32px] -tracking-[0.04em] text-center max-w-[620px] text-black/60 mx-auto">
